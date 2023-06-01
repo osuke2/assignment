@@ -24,3 +24,16 @@ end
 
 tauGDP = A\y;
 ytilde=y-tauGDP;
+
+year1 = realGDPforJ.Data(:,1);
+y1 = realGDPforJ.Data(:,2);
+year2 = realGDPforT.Data(:,1);
+y2= realGDPforT.Data(:,2);
+
+[cycle1,trend1] = qmacro_hpfilter(log(y1), 1600);
+[cycle2,trend2] = qmacro_hpfilter(log(y2), 1600);
+
+
+
+
+
