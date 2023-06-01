@@ -33,6 +33,11 @@ y2= realGDPforT.Data(:,2);
 [cycle1,trend1] = qmacro_hpfilter(log(y1), 1600);
 [cycle2,trend2] = qmacro_hpfilter(log(y2), 1600);
 
+std_J = std(cycle1);
+std_T = std(cycle2);
+corr=corrcoef(cycle1,cycle2);
+corr_JT = corr(1,2);
+
 
 
 
