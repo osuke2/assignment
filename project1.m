@@ -49,6 +49,13 @@ datetick('x', 'yyyy')
 xlabel('Time')
 legend('Japan', 'Turkey');
 grid on;
+hold off;
+
+text(729846, 0.09, sprintf('corrcoef = %f', corr_JT)); 
+text(729846, 0.07, sprintf('std_J = %f', std_J));
+text(729846, 0.05, sprintf('std_T = %f', std_T));
+
+
 
 
 
