@@ -38,6 +38,19 @@ std_T = std(cycle2);
 corr=corrcoef(cycle1,cycle2);
 corr_JT = corr(1,2);
 
+figure
+plot(year1, cycle1,'r')
+datetick('x', 'yyyy')
+xlabel('Time')
+title('Cyclical components')
+hold on;
+plot(year2, cycle2,'b')
+datetick('x', 'yyyy')
+xlabel('Time')
+legend('Japan', 'Turkey');
+grid on;
+
+
 
 
 
