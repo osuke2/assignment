@@ -22,6 +22,10 @@ std_T = std(cycle2);
 corr=corrcoef(cycle1,cycle2);
 corr_JT = corr(1,2);
 
+disp(['日本の標準偏差: ', num2str(std_J)]);
+disp(['トルコの標準偏差: ', num2str(std_T)]);
+disp(['相関係数: ', num2str(corr_JT)]);
+
 figure
 plot(year1, cycle1,'r')
 datetick('x', 'yyyy')
